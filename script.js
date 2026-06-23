@@ -38,7 +38,7 @@ const scenes = [
     },
     {
         title: "The Great Acceleration: 1980-2010",
-        description: "Between 1980 and 2010, tuition growth accelerated sharply. Private 4-year tuition nearly tripled in real terms, while public 4-year tuition more than tripled. State funding cuts during recessions forced public universities to shift costs to students, fueling this surge.",
+        description: "Between 1980 and 2010, tuition growth accelerated sharply. Private 4-year tuition nearly tripled in real terms, while public 4-year tuition more than tripled. This 30-year period saw the fastest sustained increases across all institution types.",
         yearRange: [1980, 2010],
         highlight: [1980, 2010],
         annotations: [
@@ -56,7 +56,7 @@ const scenes = [
     },
     {
         title: "A Plateau? Recent Trends (2015-2025)",
-        description: "Since 2015, tuition growth has stalled—and even slightly declined in real terms for public institutions. Demographic shifts, increased scrutiny of college value, and pandemic disruptions have contributed. But private 4-year costs remain near all-time highs. Explore the data points to see exact figures.",
+        description: "Since 2015, tuition growth has stalled and even slightly declined in real terms for public institutions. Public 4-year tuition peaked around 2015 and has dropped about 7% since then. Private 4-year costs remain near all-time highs but have leveled off. Explore the data points to see exact figures.",
         yearRange: [2015, 2025],
         highlight: [2015, 2025],
         annotations: [
