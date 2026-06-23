@@ -43,11 +43,6 @@ const scenes = [
         highlight: [1980, 2010],
         annotations: [
             {
-                note: { title: "2008 Recession", label: "State funding slashed,\ntuition spikes" },
-                data: { year: 2010, series: "Public4Year" },
-                dx: -60, dy: -50
-            },
-            {
                 note: { title: "Private 4-Year", label: "$14,150 → $39,530\n(+179%)" },
                 data: { year: 1995, series: "Private4Year" },
                 dx: -30, dy: -40
