@@ -88,27 +88,16 @@ d3.select("#btn-prev").on("click", function() {
     }
 });
 
-data = [
-    { year: 1971, Private4Year: 14550, Public4Year: 3420, Public2Year: 1510 },
-    { year: 1975, Private4Year: 13710, Public4Year: 3230, Public2Year: 1500 },
-    { year: 1980, Private4Year: 14150, Public4Year: 3130, Public2Year: 1520 },
-    { year: 1985, Private4Year: 18310, Public4Year: 3950, Public2Year: 1920 },
-    { year: 1990, Private4Year: 23010, Public4Year: 4710, Public2Year: 2240 },
-    { year: 1995, Private4Year: 25820, Public4Year: 5940, Public2Year: 2810 },
-    { year: 2000, Private4Year: 30050, Public4Year: 6560, Public2Year: 3070 },
-    { year: 2005, Private4Year: 34590, Public4Year: 9050, Public2Year: 3590 },
-    { year: 2010, Private4Year: 39530, Public4Year: 11270, Public2Year: 4050 },
-    { year: 2015, Private4Year: 43930, Public4Year: 12810, Public2Year: 4620 },
-    { year: 2020, Private4Year: 46370, Public4Year: 13150, Public2Year: 4670 },
-    { year: 2021, Private4Year: 45240, Public4Year: 12770, Public2Year: 4520 },
-    { year: 2022, Private4Year: 43940, Public4Year: 12090, Public2Year: 4280 },
-    { year: 2023, Private4Year: 44110, Public4Year: 11950, Public2Year: 4170 },
-    { year: 2024, Private4Year: 44390, Public4Year: 11920, Public2Year: 4150 },
-    { year: 2025, Private4Year: 45000, Public4Year: 11950, Public2Year: 4150 }
-];
-
-buildLegend();
-renderScene();
+d3.csv("data/tuition.csv").then(function(raw) {
+    data = raw.map(d => ({
+        year: +d.Year,
+        Private4Year: +d.Private4Year,
+        Public4Year: +d.Public4Year,
+        Public2Year: +d.Public2Year
+    }));
+    buildLegend();
+    renderScene();
+});
 
 function buildLegend() {
     const legend = d3.select("#legend");
