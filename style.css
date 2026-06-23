@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#container {
+    max-width: 960px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #1a1a2e;
+}
+
+#subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+#navigation button {
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 2px solid #1a1a2e;
+    background: white;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+#navigation button:hover:not(:disabled) {
+    background: #1a1a2e;
+    color: white;
+}
+
+#navigation button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#scene-indicator {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #1a1a2e;
+}
+
+#scene-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+#scene-description {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#chart {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#chart svg {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#legend {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+}
+
+.legend-swatch {
+    width: 20px;
+    height: 4px;
+    border-radius: 2px;
+}
+
+#source {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+.tooltip {
+    position: absolute;
+    background: rgba(26, 26, 46, 0.92);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    pointer-events: none;
+    line-height: 1.4;
+}
+
+.annotation-note-title {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.annotation-note-label {
+    font-size: 12px;
+}
+
+.annotation path {
+    stroke: #333;
+}
+
+.axis-label {
+    font-size: 13px;
+    fill: #555;
+}

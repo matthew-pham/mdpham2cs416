@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Story of College Tuition Inflation</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>The Story of College Tuition Inflation</h1>
+        <p id="subtitle">An Interactive Exploration of U.S. College Costs (1971-2025, in 2025 Dollars)</p>
+        <div id="navigation">
+            <button id="btn-prev" disabled>&larr; Previous</button>
+            <span id="scene-indicator">Scene 1 of 3</span>
+            <button id="btn-next">Next &rarr;</button>
+        </div>
+        <div id="scene-title"></div>
+        <div id="scene-description"></div>
+        <div id="chart"></div>
+        <div id="legend"></div>
+        <p id="source">Source: CollegeBoard Trends in College Pricing 2025. Values in constant 2025 dollars.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
